@@ -1,2 +1,2 @@
 include ':app', ':CommonLib'
-rootProject.name='EnzoTakeout'
+rootProject.name='Takeout'
