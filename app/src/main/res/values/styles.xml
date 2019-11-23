@@ -1,11 +1,8 @@
 <resources>
-
-    <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
-        <!-- Customize your theme here. -->
-        <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
-        <item name="colorAccent">@color/colorAccent</item>
+    <!--splash 点击快速显示欢迎页面-->
+    <style name="WelLauncher" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowBackground">@drawable/sa_splash_bg</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowNoTitle">true</item>
     </style>
-
 </resources>

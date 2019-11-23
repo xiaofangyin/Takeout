@@ -21,7 +21,7 @@ class MainActivity : BaseActivity() {
     }
 
     override fun initData(savedInstanceState: Bundle?) {
-
+        tabLayout.currentItem = 0
     }
 
     override fun initListener() {

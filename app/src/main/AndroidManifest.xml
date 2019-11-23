@@ -11,7 +11,13 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".ui.activity.MainActivity">
+        <activity
+            android:name=".ui.activity.MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.WelcomeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/WelLauncher">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
