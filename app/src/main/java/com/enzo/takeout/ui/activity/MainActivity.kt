@@ -6,6 +6,7 @@ import android.view.KeyEvent
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentTransaction
 import com.enzo.commonlib.base.BaseActivity
+import com.enzo.commonlib.utils.common.ActivityHelper
 import com.enzo.commonlib.utils.common.ToastUtils
 import com.enzo.commonlib.utils.statusbar.bar.StateAppBar
 import com.enzo.commonlib.widget.tablayout.TabEntityConfig
@@ -88,7 +89,7 @@ class MainActivity : BaseActivity() {
                 firstTime = System.currentTimeMillis()
                 return true
             } else {
-                System.exit(0)
+                ActivityHelper.getManager().AppExit()
             }
         }
         return super.onKeyDown(keyCode, event)
