@@ -67,16 +67,17 @@ class MainActivity : BaseActivity() {
         if (fragment.isAdded) {
             transaction.show(fragment)
         } else {
-            transaction.add(R.id.main_content, fragment, fragment.javaClass.simpleName)
+            transaction.add(R.id.main_content, fragment)
         }
     }
 
     private fun hideFragment(transaction: FragmentTransaction) {
-        for (i in mFragments.indices) {
-            if (mFragments[i].isAdded) {
-                transaction.hide(mFragments[i])
-            }
-        }
+//        for (i in mFragments.forEach {  }) {
+//            if (mFragments[i].isAdded) {
+//                transaction.hide(mFragments[i])
+//            }
+//        }
+
     }
 
     private var firstTime: Long = 0 //点击两次退出应用计时

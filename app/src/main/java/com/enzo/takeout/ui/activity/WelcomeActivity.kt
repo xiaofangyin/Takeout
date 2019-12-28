@@ -5,7 +5,6 @@ import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
 import com.enzo.commonlib.base.BaseActivity
-import com.enzo.commonlib.utils.statusbar.StatusBarUtils
 
 /**
  * 文 件 名: WelcomeActivity
@@ -25,7 +24,7 @@ class WelcomeActivity : BaseActivity() {
 
     override fun initData(savedInstanceState: Bundle?) {
         Handler(Looper.getMainLooper()).postDelayed(Runnable {
-            val intent = Intent(WelcomeActivity@ this, MainActivity::class.java)
+            val intent = Intent(WelcomeActivity@ this, MainActivityKt::class.java)
             startActivity(intent)
             finish()
         }, 3000)
