@@ -27,7 +27,7 @@ class TabLayout @JvmOverloads constructor(
     }
 
     override fun initData(list: List<TabEntity>) {
-        for (i in list!!.indices) {
+        for (i in list.indices) {
             val tab = TabView(context)
             tab.initTab(list[i])
             tab.setOnClickListener(this)

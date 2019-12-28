@@ -2,7 +2,7 @@ package com.enzo.takeout.ui.fragment
 
 import android.os.Bundle
 import android.view.View
-import com.enzo.commonlib.base.BaseFragment
+import com.enzo.commonlibkt.base.BaseFragment
 import com.enzo.takeout.R
 
 /**
@@ -13,10 +13,8 @@ import com.enzo.takeout.R
  */
 class HomeFragment4 : BaseFragment() {
 
-    override fun getLayoutId(): Int {
-        return R.layout.fragment_home_4
-
-    }
+    override val layoutId: Int
+        get() = R.layout.fragment_home_4//To change initializer of created properties use File | Settings | File Templates.
 
     override fun initView(rootView: View?) {
 

@@ -1,6 +1,6 @@
 package com.enzo.takeout.app
 
-import com.enzo.commonlib.base.BaseApplication
+import com.enzo.commonlibkt.base.BaseApplication
 
 /**
  * 文 件 名: App

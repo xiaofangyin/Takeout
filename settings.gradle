@@ -1,2 +1,2 @@
-include ':app', ':CommonLib', ':commonlibkt'
+include ':app', ':commonlibkt'
 rootProject.name='Takeout'

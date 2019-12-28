@@ -4,7 +4,7 @@ import android.content.Intent
 import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
-import com.enzo.commonlib.base.BaseActivity
+import com.enzo.commonlibkt.base.BaseActivity
 
 /**
  * 文 件 名: WelcomeActivity
@@ -16,6 +16,10 @@ class WelcomeActivity : BaseActivity() {
 
     override fun getLayoutId(): Int {
         return 0
+    }
+
+    override fun initHeader() {
+
     }
 
     override fun initView() {

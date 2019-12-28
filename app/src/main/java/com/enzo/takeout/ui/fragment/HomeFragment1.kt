@@ -2,7 +2,7 @@ package com.enzo.takeout.ui.fragment
 
 import android.os.Bundle
 import android.view.View
-import com.enzo.commonlib.base.BaseFragment
+import com.enzo.commonlibkt.base.BaseFragment
 import com.enzo.takeout.R
 
 /**
@@ -13,9 +13,8 @@ import com.enzo.takeout.R
  */
 class HomeFragment1 : BaseFragment() {
 
-    override fun getLayoutId(): Int {
-        return R.layout.fragment_home_1
-    }
+    override val layoutId: Int
+        get() = R.layout.fragment_home_1
 
     override fun initView(rootView: View?) {
 
