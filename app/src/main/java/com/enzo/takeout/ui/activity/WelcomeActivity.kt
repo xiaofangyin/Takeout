@@ -28,7 +28,7 @@ class WelcomeActivity : BaseActivity() {
 
     override fun initData(savedInstanceState: Bundle?) {
         Handler(Looper.getMainLooper()).postDelayed(Runnable {
-            val intent = Intent(WelcomeActivity@ this, MainActivityKt::class.java)
+            val intent = Intent(this, MainActivityKt::class.java)
             startActivity(intent)
             finish()
         }, 3000)
