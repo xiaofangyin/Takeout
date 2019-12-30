@@ -30,10 +30,6 @@ class MainActivityKt : BaseActivity() {
         return R.layout.activity_main2
     }
 
-    override fun initHeader() {
-
-    }
-
     override fun initView() {
         main_tab_layout.initData(TabEntityConfig.entities)
     }

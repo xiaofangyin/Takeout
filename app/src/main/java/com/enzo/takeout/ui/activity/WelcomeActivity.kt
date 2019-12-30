@@ -18,10 +18,6 @@ class WelcomeActivity : BaseActivity() {
         return 0
     }
 
-    override fun initHeader() {
-
-    }
-
     override fun initView() {
 
     }

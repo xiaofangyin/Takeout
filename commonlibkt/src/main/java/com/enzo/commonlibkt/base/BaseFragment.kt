@@ -13,12 +13,13 @@ import androidx.fragment.app.Fragment
  * 邮   箱: xiaofangyinwork@163.com
  */
 abstract class BaseFragment : Fragment(), IBaseFragment {
+
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        val view = inflater.inflate(layoutId, null)
+        val view = inflater.inflate(getLayoutId(), null)
         initView(view)
         return view
     }

@@ -13,8 +13,9 @@ import com.enzo.takeout.R
  */
 class HomeFragment2 : BaseFragment() {
 
-    override val layoutId: Int
-        get() = R.layout.fragment_home_2
+    override fun getLayoutId(): Int {
+        return R.layout.fragment_home_2
+    }
 
     override fun initView(rootView: View?) {
 

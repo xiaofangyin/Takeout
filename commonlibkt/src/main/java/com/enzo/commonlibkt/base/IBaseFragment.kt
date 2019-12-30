@@ -10,8 +10,12 @@ import android.view.View
  * 邮   箱: xiaofangyinwork@163.com
  */
 interface IBaseFragment {
-    val layoutId: Int
+
+    fun getLayoutId(): Int
+
     fun initView(rootView: View?)
+
     fun initData(savedInstanceState: Bundle?)
+
     fun initListener(rootView: View?)
 }
