@@ -45,11 +45,11 @@ class MainActivityKt : BaseActivity() {
 
     override fun initListener() {
         main_tab_layout.setOnTabClickListener(object : TabLayout.OnTabClickListener {
-            override fun onTabClick(view: TabView?, position: Int) {
+            override fun onTabClick(view: TabView, position: Int) {
                 switchFragment(position)
             }
 
-            override fun onTabReClick(view: TabView?, position: Int) {
+            override fun onTabReClick(view: TabView, position: Int) {
 
             }
         })

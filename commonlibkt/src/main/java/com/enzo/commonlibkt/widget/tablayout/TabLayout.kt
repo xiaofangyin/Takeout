@@ -32,8 +32,7 @@ class TabLayout @JvmOverloads constructor(
             tab.initTab(list[i])
             tab.setOnClickListener(this)
             tab.tag = i
-            val layoutParams =
-                LayoutParams(0, LayoutParams.MATCH_PARENT)
+            val layoutParams = LayoutParams(0, LayoutParams.MATCH_PARENT)
             layoutParams.weight = 1f
             tab.layoutParams = layoutParams
             addView(tab)
@@ -88,7 +87,9 @@ class TabLayout @JvmOverloads constructor(
     override fun getMessageNum(position: Int): Int {
         return if (position >= 0 && position < mTabList.size) {
             mTabList[position].messageNumber
-        } else 0
+        } else {
+            0
+        }
     }
 
     override fun showRedPoint(position: Int) {
@@ -103,22 +104,15 @@ class TabLayout @JvmOverloads constructor(
         }
     }
 
-    private var mListener: OnTabClickListener? =
-        null
+    private var mListener: OnTabClickListener? = null
 
-    fun setOnTabClickListener(listener: OnTabClickListener?) {
+    fun setOnTabClickListener(listener: OnTabClickListener) {
         mListener = listener
     }
 
     interface OnTabClickListener {
-        fun onTabClick(
-            view: TabView?,
-            position: Int
-        )
+        fun onTabClick(view: TabView, position: Int)
 
-        fun onTabReClick(
-            view: TabView?,
-            position: Int
-        )
+        fun onTabReClick(view: TabView, position: Int)
     }
 }
