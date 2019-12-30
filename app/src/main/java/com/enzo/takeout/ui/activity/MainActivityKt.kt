@@ -14,7 +14,7 @@ import com.enzo.takeout.ui.fragment.HomeFragment1
 import com.enzo.takeout.ui.fragment.HomeFragment2
 import com.enzo.takeout.ui.fragment.HomeFragment3
 import com.enzo.takeout.ui.fragment.HomeFragment4
-import kotlinx.android.synthetic.main.activity_main2.*
+import kotlinx.android.synthetic.main.activity_main.*
 
 /**
  * 文 件 名: MainActivityKt
@@ -27,7 +27,7 @@ class MainActivityKt : BaseActivity() {
     private val mFragments: ArrayList<Fragment> = ArrayList()
 
     override fun getLayoutId(): Int {
-        return R.layout.activity_main2
+        return R.layout.activity_main
     }
 
     override fun initView() {
@@ -56,12 +56,11 @@ class MainActivityKt : BaseActivity() {
     }
 
     private fun switchFragment(index: Int) {
-        val fragmentManager = this.supportFragmentManager
-        val transaction = fragmentManager.beginTransaction()
+        val transaction = supportFragmentManager.beginTransaction()
         hideFragment(transaction)
         showFragment(transaction, mFragments[index])
         transaction.commitAllowingStateLoss()
-        fragmentManager.executePendingTransactions()
+        supportFragmentManager.executePendingTransactions()
     }
 
     private fun showFragment(transaction: FragmentTransaction, fragment: Fragment) {

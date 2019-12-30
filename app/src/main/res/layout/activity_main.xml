@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".ui.activity.MainActivity">
+    tools:context=".ui.activity.MainActivityKt">
 
     <FrameLayout
         android:id="@+id/main_content"
@@ -18,8 +18,9 @@
         android:layout_height="0.5dp"
         android:background="@color/color_line" />
 
-    <com.enzo.commonlib.widget.tablayout.TabLayout
+    <com.enzo.commonlibkt.widget.tablayout.TabLayout
         android:id="@+id/main_tab_layout"
         android:layout_width="match_parent"
-        android:layout_height="56dp" />
+        android:layout_height="56dp"/>
+
 </LinearLayout>
