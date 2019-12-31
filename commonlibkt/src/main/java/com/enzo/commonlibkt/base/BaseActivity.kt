@@ -9,15 +9,14 @@ import androidx.appcompat.app.AppCompatActivity
  * 创建日期: 2019/12/28
  * 邮   箱: xiaofangyinwork@163.com
  */
-abstract  class BaseActivity : AppCompatActivity(),IBaseActivity {
+abstract class BaseActivity : AppCompatActivity(), IBaseActivity {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         val layoutId = getLayoutId()
-        if(layoutId != 0){
+        if (layoutId != 0) {
             setContentView(layoutId)
         }
-        initView()
         initData(savedInstanceState)
         initListener()
     }

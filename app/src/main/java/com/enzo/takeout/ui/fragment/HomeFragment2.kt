@@ -17,10 +17,6 @@ class HomeFragment2 : BaseFragment() {
         return R.layout.fragment_home_2
     }
 
-    override fun initView(rootView: View?) {
-
-    }
-
     override fun initData(savedInstanceState: Bundle?) {
 
     }

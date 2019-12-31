@@ -13,8 +13,6 @@ interface IBaseFragment {
 
     fun getLayoutId(): Int
 
-    fun initView(rootView: View?)
-
     fun initData(savedInstanceState: Bundle?)
 
     fun initListener(rootView: View?)

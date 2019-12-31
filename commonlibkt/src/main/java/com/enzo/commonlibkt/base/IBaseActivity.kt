@@ -12,8 +12,6 @@ interface IBaseActivity {
 
     fun getLayoutId(): Int
 
-    fun initView()
-
     fun initData(savedInstanceState: Bundle?)
 
     fun initListener()

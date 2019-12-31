@@ -21,10 +21,6 @@ class HomeFragment4 : BaseFragment() {
         return R.layout.fragment_home_4
     }
 
-    override fun initView(rootView: View?) {
-
-    }
-
     override fun initData(savedInstanceState: Bundle?) {
 
     }
@@ -54,12 +50,10 @@ class HomeFragment4 : BaseFragment() {
                 .listener(object : CenterAlertDialog.AlertDialogListener {
                     override fun onNegClick() {
                         Toast.makeText(view!!.context, "取消", Toast.LENGTH_SHORT).show()
-
                     }
 
                     override fun onPosClick() {
                         Toast.makeText(view!!.context, "确定", Toast.LENGTH_SHORT).show()
-
                     }
                 })
                 .build()

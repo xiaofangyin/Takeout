@@ -18,10 +18,6 @@ class WelcomeActivity : BaseActivity() {
         return 0
     }
 
-    override fun initView() {
-
-    }
-
     override fun initData(savedInstanceState: Bundle?) {
         Handler(Looper.getMainLooper()).postDelayed(Runnable {
             val intent = Intent(this, MainActivityKt::class.java)

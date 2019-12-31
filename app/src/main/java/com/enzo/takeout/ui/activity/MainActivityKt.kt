@@ -30,11 +30,9 @@ class MainActivityKt : BaseActivity() {
         return R.layout.activity_main
     }
 
-    override fun initView() {
-        main_tab_layout.initData(TabEntityConfig.entities)
-    }
-
     override fun initData(savedInstanceState: Bundle?) {
+        main_tab_layout.initData(TabEntityConfig.entities)
+
         mFragments.add(HomeFragment1())
         mFragments.add(HomeFragment2())
         mFragments.add(HomeFragment3())
