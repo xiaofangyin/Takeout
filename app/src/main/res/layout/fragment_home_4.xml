@@ -4,9 +4,15 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <TextView
+    <Button
+        android:id="@+id/bottom_dialog"
+        android:text="底部选择弹窗"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:gravity="center"
-        android:text="我" />
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/center_dialog"
+        android:text="中间选择弹窗"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
 </LinearLayout>

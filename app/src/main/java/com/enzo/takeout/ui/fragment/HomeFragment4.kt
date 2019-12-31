@@ -2,8 +2,12 @@ package com.enzo.takeout.ui.fragment
 
 import android.os.Bundle
 import android.view.View
+import android.widget.Toast
 import com.enzo.commonlibkt.base.BaseFragment
+import com.enzo.commonlibkt.widget.alertdialog.BottomAlertDialog
+import com.enzo.commonlibkt.widget.alertdialog.CenterAlertDialog
 import com.enzo.takeout.R
+import kotlinx.android.synthetic.main.fragment_home_4.*
 
 /**
  * 文 件 名: HomeFragment4
@@ -26,6 +30,40 @@ class HomeFragment4 : BaseFragment() {
     }
 
     override fun initListener(rootView: View?) {
+        bottom_dialog.setOnClickListener {
+            BottomAlertDialog.Builder(it.context)
+                .add("1")
+                .add("2")
+                .add("3")
+                .cancel("取消")
+                .listener(object : BottomAlertDialog.OnItemClickListener {
+                    override fun onItemClick(i: Int, data: String?) {
+                        Toast.makeText(view!!.context, data, Toast.LENGTH_SHORT).show()
+                    }
+                })
+                .build()
+                .show()
+        }
 
+        center_dialog.setOnClickListener {
+            CenterAlertDialog.Builder(it.context)
+                .title("退出登录")
+                .content("是否退出登录")
+                .cancel("取消")
+                .confirm("确定")
+                .listener(object : CenterAlertDialog.AlertDialogListener {
+                    override fun onNegClick() {
+                        Toast.makeText(view!!.context, "取消", Toast.LENGTH_SHORT).show()
+
+                    }
+
+                    override fun onPosClick() {
+                        Toast.makeText(view!!.context, "确定", Toast.LENGTH_SHORT).show()
+
+                    }
+                })
+                .build()
+                .show()
+        }
     }
 }
