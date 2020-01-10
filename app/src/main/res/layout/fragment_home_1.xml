@@ -4,9 +4,8 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <TextView
+    <com.enzo.commonlibkt.widget.banner.Banner
+        android:id="@+id/banner"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:gravity="center"
-        android:text="首页" />
+        android:layout_height="200dp" />
 </LinearLayout>

@@ -3,6 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.enzo.takeout">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:name=".app.App"
         android:icon="@mipmap/ic_launcher"
@@ -12,7 +14,7 @@
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
         <activity
-            android:name=".ui.activity.MainActivity"
+            android:name=".ui.activity.MainActivityKt"
             android:screenOrientation="portrait" />
         <activity
             android:name=".ui.activity.WelcomeActivity"
@@ -24,7 +26,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ui.activity.MainActivityKt" />
     </application>
 
 </manifest>
