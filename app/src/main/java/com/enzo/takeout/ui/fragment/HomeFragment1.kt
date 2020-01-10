@@ -6,6 +6,7 @@ import android.util.Log
 import android.view.View
 import androidx.viewpager.widget.ViewPager
 import com.enzo.commonlibkt.base.BaseFragment
+import com.enzo.commonlibkt.widget.banner.ScaleInTransformer
 import com.enzo.commonlibkt.widget.banner.creator.ImageHolderCreator
 import com.enzo.commonlibkt.widget.banner.indicator.IndicatorView
 import com.enzo.takeout.R
@@ -69,6 +70,8 @@ class HomeFragment1 : BaseFragment() {
             })
             .setPages(list)
 
+        banner.setPageMargin(40, 20)
+        banner.setPageTransformer(true, ScaleInTransformer())
         banner.isAutoPlay = true
     }
 

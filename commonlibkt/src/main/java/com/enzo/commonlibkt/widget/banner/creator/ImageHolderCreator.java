@@ -11,7 +11,7 @@ public class ImageHolderCreator implements HolderCreator {
     @Override
     public View createView(final Context context, final int index, Object o) {
         ImageView iv = new ImageView(context);
-        iv.setScaleType(ImageView.ScaleType.FIT_XY);
+        iv.setScaleType(ImageView.ScaleType.CENTER_CROP);
         Glide.with(iv).load(o).into(iv);
         iv.setOnClickListener(new View.OnClickListener() {
             @Override
